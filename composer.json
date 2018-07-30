@@ -1,0 +1,35 @@
+{
+    "name": "cwccode/laravel-debug-headers",
+    "description": "Debug headers for Laravel API applications",
+    "keywords": ["laravel", "debug", "database", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Connor",
+            "email": "connorwebcon@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-pcre": "*",
+        "illuminate/database": "5.4.*|5.5.*|5.6.*",
+        "illuminate/events": "5.4.*|5.5.*|5.6.*",
+        "illuminate/routing": "5.4.*|5.5.*|5.6.*",
+        "symfony/http-foundation": "~4.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "CwcCode\\LaravelDebugHeaders\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CwcCode\\LaravelDebugHeaders\\Providers\\DebugHeadersServiceProvider"
+            ]
+        }
+    }
+}
