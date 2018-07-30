@@ -9,7 +9,7 @@ interface DebugService
      *
      * @return array
      */
-    public function getQueries(): array;
+    public function getQueries();
 
     /**
      * Get the total query time.

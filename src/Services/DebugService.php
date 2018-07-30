@@ -45,7 +45,7 @@ class DebugService implements DebugServiceContract
     /**
      * {@inheritdoc}
      */
-    public function getQueries(): array
+    public function getQueries()
     {
         return static::$queries;
     }
